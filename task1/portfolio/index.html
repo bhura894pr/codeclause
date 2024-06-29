@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ee75a8e6c6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="pimg/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portifolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Bhura Ram</span> <br>From Barmer Rajasthan</h1>
+            </div>
+        </div>
+    </div>
+<!-- -----------------------About Me------------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="pimg/Bhura_Ram.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am currently pursuing my B.Tech at NIT Durgapur, where I am honing my skills in web development, Data Structures & Algorithms (DSA), operating systems, Database Management Systems (DBMS), and data analytics. With a strong foundation in these areas, I am passionate about leveraging technology to solve real-world problems efficiently. Despite having no formal work experience, I am actively involved in academic projects and extracurricular activities that enhance my practical knowledge and problem-solving abilities. I am eager to apply my skills and continue learning in a professional setting to contribute effectively to the field of technology.</p>
+                <div class="tab-titles">
+                    <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                    <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                    <div class="tab-links" onclick="opentab('education')">Education</div>
+
+                </div>
+                <div class="tab-content active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Proficient in web development, including front-end and back-end technologies.
+                        </li>
+                        <li><span>DSA</span><br>Strong background in Data Structures & Algorithms (DSA) for efficient problem-solving.</li>
+                        <li><span>DBMS</span><br>Experienced in Database Management Systems (DBMS) for efficient data organization, querying, and maintenance.</li>
+                        <li><span>OS</span><br>Knowledgeable in operating systems, including their design and functionality</li>
+                        <li><span>Data Analytics</span><br>Skilled in data analytics, including data processing, visualization, and interpretation.</li>
+
+
+                    </ul>
+                </div>
+                <div class="tab-content" id="experience">
+                    <ul>
+                        <li><span>Freshers</span><br>As a fresher currently pursuing my B.Tech at NIT Durgapur, I bring a fresh perspective and a strong academic foundation in web development, Data Structures & Algorithms (DSA), operating systems, Database Management Systems (DBMS), and data analytics. While I may not have prior work experience, I am dedicated to continuous learning and have actively engaged in challenging projects and academic endeavors to sharpen my skills. I am enthusiastic about starting my career in technology, eager to contribute my knowledge, and committed to growing professionally in the field.</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="education">
+                    <ul>
+                        <li><span>2020</span><br>Higher Secondary at Jawahar Navodaya Vidyalaya Barmer</li>
+                        <li><span>2025</span><br>BTech from NIT Durgapur(Pursuing)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------------------Service--------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>web design</h2>
+                <p>Web development is the art and science of creating functional and visually appealing websites. It encompasses both front-end and back-end development, where front-end focuses on user interface and experience, and back-end manages server-side functionalities and databases. From designing responsive layouts with HTML, CSS, and JavaScript to implementing dynamic features with frameworks like React or Vue.js, web developers ensure seamless user interactions and optimized performance. Constantly evolving with new technologies and trends, web development blends creativity with technical proficiency to build digital experiences that inform, entertain, and engage users worldwide.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>DSA </h2>
+                <p>Data Structures & Algorithms (DSA) form the backbone of efficient software development and problem-solving in computer science. Data structures provide organized ways to store and manage data, optimizing access and manipulation. Algorithms are step-by-step procedures or formulas for solving problems, often leveraging data structures. Mastery of DSA enables programmers to design efficient solutions, analyze performance, and tackle complex computational challenges. With applications ranging from optimizing search algorithms to enhancing database performance, DSA is fundamental for building robust and scalable software systems essential for modern technology.</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>DBMS</h2>
+                <p>Database Management Systems (DBMS) are essential tools in modern computing for organizing, storing, and retrieving data efficiently. They provide a structured approach to managing large volumes of information, ensuring data integrity, security, and scalability. DBMS enables users to create, modify, and manipulate databases through intuitive interfaces and query languages like SQL. By optimizing data retrieval and storage mechanisms, DBMS supports diverse applications, from e-commerce platforms to enterprise resource planning systems. Understanding DBMS principles is crucial for designing robust data architectures that underpin reliable and responsive software solutions.</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- -------------------------------Portfolio---------------------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="pimg/login_authentication.png" alt="">
+                <div class="layer">
+                    <h3>Login Authentication</h3>
+                    <p>Login authentication is a critical security mechanism used by websites and applications to verify the identity of users before granting access to protected resources. It involves validating credentials, typically a username/email and password combination, against stored records in a database or directory service. Secure authentication protocols such as OAuth, OpenID Connect, or token-based authentication are often employed to enhance security. Multi-factor authentication (MFA) adds an extra layer of protection by requiring additional verification factors beyond passwords, such as SMS codes or biometric data. Robust authentication practices are essential to safeguard user accounts and sensitive information from unauthorized access and cyber threats.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pimg/calculator.png" alt="">
+                <div class="layer">
+                    <h3>Calculator</h3>
+                    <p>A calculator application provides users with a tool to perform mathematical calculations quickly and accurately. It typically includes basic arithmetic operations such as addition, subtraction, multiplication, and division, along with additional functionalities like parentheses for complex expressions and memory functions for storing values temporarily. Modern calculator apps often feature a user-friendly interface with responsive design for seamless use on various devices, making them essential tools for everyday calculations.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pimg/ecommerce1.png" alt="">
+                <div class="layer">
+                    <h3>E-Commerce Website</h3>
+                    <p>An e-commerce website serves as a digital platform where businesses and consumers can engage in buying and selling products or services over the internet. It facilitates seamless transactions, product browsing, and secure payment processing. Key features include product catalogs with detailed descriptions, user-friendly navigation, personalized user accounts, shopping cart functionality, secure checkout processes, and customer support channels. E-commerce websites leverage robust backend systems for inventory management, order processing, and analytics to optimize sales and customer satisfaction, catering to a global marketplace accessible anytime, anywhere.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+
+<!-- ----------------------------------contact------------------------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>brkpeshwa894@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 637703412</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/bhuraram.kumawat.894"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/kmwt_br894/"><i class="fa-brands fa-instagram"></i></a>
+                    <!-- <a href=""><i class="fa-brands fa-twitter"></i></a> -->
+                    <a href="https://github.com/bhura894pr/"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/bhura-ram-9366831a5/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="img/cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright Bhura. <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = '<SCRIPT URhttps://script.google.com/macros/s/AKfycbxpWC8pI-0gpAy02U9FujlfE0nOd1Gzbt53J2Yon-pUqZfgQwv7WAhrz9teRnyvZfI4/execL>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg  = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message send successfully"
+            setTimeout(function(){
+                msg.innerHTML = " "
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
